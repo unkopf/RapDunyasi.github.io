@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap Efsaneleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h1, h2, h3 {
+            color: #ffcc00;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 1rem;
+            color: #cccccc;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Rap Efsaneleri</div>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Ana Sayfa</a></li>
+                <li><a onclick="showSection('history')">Tarihçe</a></li>
+                <li><a onclick="showSection('artists')">Sanatçılar</a></li>
+                <li><a onclick="showSection('genres')">Türler</a></li>
+                <li><a onclick="showSection('contact')">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Ana Sayfa -->
+        <section id="home" class="active">
+            <h1>Hoş Geldiniz!</h1>
+            <p>Rap müzik tarihine, efsanevi sanatçılara ve türlere dair her şeyi öğrenebileceğiniz bir platforma hoş geldiniz. Menülerden konuları keşfetmeye başlayabilirsiniz.</p>
+        </section>
+
+        <!-- Tarihçe -->
+        <section id="history">
+            <h1>Amerikan Rap Tarihi</h1>
+            <p>Rap müziği, 1970'lerde Bronx, New York'ta doğan bir kültürel hareketin parçası olarak ortaya çıktı. Bu dönemde, şehirdeki gençlik, kendini ifade etmek ve toplumdaki zorluklara dikkat çekmek için yeni yollar arıyordu. DJ Kool Herc'in düzenlediği partilerde, müziğin ritmik bölümlerini uzatarak üzerine şiirsel sözler eklediği teknik, rapin temellerini oluşturdu.</p>
+            <p>1980'ler, rap müziğinin altın çağı olarak kabul edilir. Bu dönemde Grandmaster Flash, Run-D.M.C. ve Public Enemy gibi gruplar ortaya çıktı. Rap sadece eğlenceli bir müzik tarzı olmakla kalmadı, aynı zamanda sosyal adaletsizliklere dikkat çeken güçlü bir araç haline geldi. Public Enemy'nin "Fight the Power" gibi şarkıları, toplumun farklı kesimlerinden geniş bir dinleyici kitlesi kazandı.</p>
+            <p>1990'lar, rap müziğinin küresel bir fenomen haline geldiği dönemdir. Tupac Shakur ve Notorious B.I.G. gibi sanatçılar, bu türü hem sanatsal hem de ticari olarak zirveye taşıdı. Tupac'ın lirikleri, toplumsal sorunlara odaklanırken, Biggie'nin şarkıları New York sokaklarındaki hayatı resmetti. Ancak, bu dönemde East Coast ve West Coast arasında yaşanan rekabet, trajik kayıplara yol açtı.</p>
+            <p>Günümüzde rap, dünyanın dört bir yanında milyonlarca insanın takip ettiği bir kültürdür. Eminem, Kendrick Lamar, J. Cole gibi isimler, türün evrimini sürdürmekte ve yeni jenerasyonlara ilham vermektedir.</p>
+        </section>
+
+        <!-- Sanatçılar -->
+        <section id="artists">
+            <h1>Efsanevi Sanatçılar</h1>
+            <h2>Tupac Shakur</h2>
+            <p>Tupac Shakur, yalnızca bir rapçi değil, aynı zamanda bir şair, aktivist ve aktördü. "Changes" ve "Dear Mama" gibi şarkıları, sosyal adaletsizlikler ve aile bağları gibi konuları derinlemesine ele alır. Sanatçının erken ölümü, müzik dünyasında derin bir iz bıraktı.</p>
+            <h2>Notorious B.I.G.</h2>
+            <p>Biggie Smalls, eşsiz hikaye anlatımı yeteneğiyle tanınır. "Juicy" ve "Big Poppa" gibi parçaları, rap tarihinin en unutulmaz eserleri arasında yer alır. Kısa süren kariyerine rağmen, Biggie'nin etkisi bugün bile hissedilmektedir.</p>
+            <h2>Eminem</h2>
+            <p>Eminem, rap dünyasında benzersiz bir yere sahiptir. Lirik yeteneği, hızlı sözleri ve samimi hikayeleriyle milyonlarca hayran kazanmıştır. "Lose Yourself" ve "Stan" gibi şarkıları, müziğin ötesinde bir kültürel fenomen haline gelmiştir.</p>
+        </section>
+
+        <!-- Türler -->
+        <section id="genres">
+            <h1>Rap Türleri</h1>
+            <ul>
+                <li><strong>Gangsta Rap:</strong> Sokak hayatını ve toplumsal zorlukları ele alır. Dr. Dre ve Snoop Dogg gibi sanatçılar bu türün önde gelen temsilcilerindendir.</li>
+                <li><strong>Conscious Rap:</strong> Daha çok toplumsal mesajlar içerir ve dinleyicilere bir şeyler öğretmeyi amaçlar. Common ve Mos Def bu türde tanınan isimlerdir.</li>
+                <li><strong>Trap:</strong> Modern rapin popüler bir alt türüdür. Ağır bas ritimleri ve melodik yapısıyla dikkat çeker. Migos ve Travis Scott bu türde öncü isimlerdir.</li>
+            </ul>
+        </section>
+
+        <!-- İletişim -->
+        <section id="contact">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçmek için aşağıdaki formu doldurun. Fikirlerinizi ve görüşlerinizi paylaşmaktan mutluluk duyarız!</p>
+            <form>
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rap Efsaneleri. Tüm hakları saklıdır.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            // Tüm bölümleri gizle
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Seçilen bölümü göster
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
